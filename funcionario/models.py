@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 
-class funcao(models.Model):
+class classefuncao(models.Model):
     funcao=models.CharField(verbose_name="Função",max_length=194,unique=True)
 
     class Meta:
@@ -14,7 +14,7 @@ class funcao(models.Model):
         return self.funcao
 
 
-class educacao(models.Model):
+class classeeducacao(models.Model):
     educacao=models.CharField(verbose_name="Educação",max_length=194,unique=True)
 
     class Meta:
@@ -26,7 +26,7 @@ class educacao(models.Model):
         return self.educacao
 
 
-class treinamento(models.Model):
+class classetreinamento(models.Model):
     treinamento=models.CharField(verbose_name="Treinamento",max_length=194,unique=True)
 
     class Meta:
@@ -38,7 +38,7 @@ class treinamento(models.Model):
         return self.treinamento
 
 
-class experiencia(models.Model):
+class classeexperiencia(models.Model):
     experiencia=models.CharField(verbose_name="Experiência",max_length=194,unique=True)
 
     class Meta:
